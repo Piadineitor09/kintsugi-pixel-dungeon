@@ -67,9 +67,9 @@ public class AboutScene extends PixelScene {
 		//*** Shattered Pixel Dungeon Credits ***
 
 		CreditsBlock shpx = new CreditsBlock(true, Window.SHPX_COLOR,
-				"Shattered Pixel Dungeon",
+				"Kintsugi Pixel Dungeon",
 				Icons.SHPX.get(),
-				"Developed by: _Evan Debenham_\nBased on Pixel Dungeon's open source",
+				"Developed by: Piadineitor09; based off Shattered Pixel Dungeon by _Evan Debenham_\nBased on Pixel Dungeon's open source",
 				"ShatteredPixel.com",
 				"https://ShatteredPixel.com");
 		if (landscape()){
@@ -184,6 +184,15 @@ public class AboutScene extends PixelScene {
 				"https://github.com/prurigro/");
 		purigro.setRect(arcnor.right()+2, arcnor.top(), colWidth/2f, 0);
 		content.add(purigro);
+
+        CreditsBlock piadineitor = new CreditsBlock(false, GDX_COLOR,
+                "mod maker:",
+                Icons.PURIGRO.get(),
+                "Riccardo Zanghi",
+                "github.com/Piadineitor09",
+                "https://github.com/Piadineitor09/");
+        purigro.setRect(arcnor.right()+2, arcnor.top(), colWidth/2f, 0);
+        content.add(piadineitor);
 
 		//*** Transifex Credits ***
 
