@@ -185,13 +185,28 @@ public class AboutScene extends PixelScene {
 		purigro.setRect(arcnor.right()+2, arcnor.top(), colWidth/2f, 0);
 		content.add(purigro);
 
+        addLine(purigro.top() - 4, content);
+
         CreditsBlock piadineitor = new CreditsBlock(false, GDX_COLOR,
                 "mod maker:",
-                Icons.PURIGRO.get(),
+                Icons.PIADINEITOR.get(),
                 "Riccardo Zanghi",
                 "github.com/Piadineitor09",
                 "https://github.com/Piadineitor09/");
-        purigro.setRect(arcnor.right()+2, arcnor.top(), colWidth/2f, 0);
+        if (landscape()){
+            piadineitor.setPos(
+                    purigro.left(),
+                    purigro.bottom() + 5
+            );
+            piadineitor.setSize(colWidth/2f, 0);
+        } else {
+            piadineitor.setPos(
+                    alex.left(),
+                    purigro.bottom() + 5
+            );
+            piadineitor.setSize(colWidth/2f, 0);
+        }
+
         content.add(piadineitor);
 
 		//*** Transifex Credits ***
