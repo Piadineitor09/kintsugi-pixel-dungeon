@@ -202,7 +202,7 @@ public class CloakOfShadows extends Artifact {
 	
 	@Override
 	public Item upgrade() {
-		chargeCap = Math.min(chargeCap + 1, 10);
+		chargeCap = chargeCap * 2;
 		return super.upgrade();
 	}
 
